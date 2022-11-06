@@ -11,6 +11,15 @@
       font-size: clamp(13px, .9375vw, 15px);
     }
   }
+  .triggers {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    button {
+      font-weight: 300;
+      font-size: clamp(13px, .9375vw, 15px);
+    }
+  }
   .contact-column {
     display: flex;
     flex-direction: column;

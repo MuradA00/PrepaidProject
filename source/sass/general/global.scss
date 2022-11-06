@@ -4,6 +4,11 @@ body {
   color: var(--color-black);
   background-color: var(--body-bg);
   overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+.--body-locked {
+  overflow: hidden;
 }
 
 html {
