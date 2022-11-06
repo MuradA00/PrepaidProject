@@ -43,13 +43,16 @@
     width: max(47.8125vw, 25rem);
     height: 37.25rem;
     top: 50%;
-    left: 55%;
+    left: 60%;
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
     background-size: contain;
     z-index: -1;
     @include max-width(1366px) {
       left: 50%;
+    }
+    @include max-width($media) {
+      background-size: 100% 100%;
     }
   }
   &__inner {

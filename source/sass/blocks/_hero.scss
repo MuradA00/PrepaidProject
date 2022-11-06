@@ -116,7 +116,9 @@
 
 @include max-width(31.25em) {
   .hero {
-
+    &__image {
+      max-width: 15.875rem;
+    }
   }
   .adv-list {
     display: flex;

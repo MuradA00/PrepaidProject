@@ -39,6 +39,7 @@
 @include max-width(700px) {
   .footer {
     &__body {
+      padding: 1.5rem 0;
       display: grid;
       grid-gap: 2rem;
       grid-template-columns: repeat(2, auto);
@@ -51,6 +52,7 @@
 @include max-width(400px) {
   .footer {
     &__body {
+      grid-gap: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;

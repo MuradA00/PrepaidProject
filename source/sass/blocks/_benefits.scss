@@ -38,6 +38,7 @@
       flex-direction: column;
     }
     &__item {
+      min-height: 20rem;
       max-width: 350px;
       margin-inline: auto;
     }
