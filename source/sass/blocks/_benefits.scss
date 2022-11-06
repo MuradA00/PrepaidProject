@@ -1,0 +1,45 @@
+.benefits {
+  background-color: var(--clr-main);
+  padding: clamp(70px, 6.5625vw, 105px) 0px;
+  &__row {
+    display: flex;
+    justify-content: center;
+    grid-gap: 35px;
+  }
+  &__item {
+    border: 2px solid var(--clr-white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 20px;
+    padding: 30px 12px;
+    min-height: 30rem;
+    border-radius: 1.875rem;
+    width: 100%;
+    box-shadow: 0px 4px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+  }
+  &__name {
+    font-size: clamp(18px, 1.375vw, 22px);
+    font-weight: 400;
+  }
+  &__descr {
+    p {
+      font-size: clamp(14px, .9375vw, 15px);
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}
+
+@include max-width($media) {
+  .benefits {
+    &__row {
+      flex-direction: column;
+    }
+    &__item {
+      max-width: 350px;
+      margin-inline: auto;
+    }
+  }
+}

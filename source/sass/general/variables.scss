@@ -1,0 +1,40 @@
+:root {
+    /* -- Fonts --*/
+  --ff: 'Aileron', sans-serif;
+  // Color
+  --clr-main: hsla(160, 100%, 40%, 1);
+  --clr-black: hsla(0, 0%, 16%, 1);
+  --clr-white: #ffffff;
+  --clr-body: #FFFFFF;
+  // Spacing
+  --spc-20: 1.25rem;
+  // Shadow
+  --icon-shadow: -1px 2px 10px 0px hsla(0, 0%, 13%, 0.08);
+
+}
+
+.btn {
+  background-color: var(--clr-main);
+  padding: 0.8125rem 2.5625rem;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 400ms ease;
+  border-radius: 20px 10px 20px 10px;
+  color: var(--clr-white);
+  &:hover {
+    background-color: transparent;
+    color: var(--clr-main);
+    outline: 1px solid var(--clr-main);
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+.hero {
+  padding-top: 36px;
+  &__body {
+    padding: 0px 0px clamp(50px, 5vw, 80px) 0px;
+    display: grid;
+    grid-template-columns: 32rem 40.8125rem;
+  }
+  &__title {
+    font-weight: 400;
+    color: var(--clr-main);
+    font-size: clamp(32px, 3.4375vw, 55px);
+    span {
+      font-weight: 600;
+    }
+  }
+  &__descr {
+    p {
+      font-size: clamp(14px, .9375vw, 15px);
+    }
+  }
+  &__info {
+    padding-top: clamp(90px, 10vw, 158px);
+  }
+  &__heading {
+    display: grid;
+    grid-gap: 20px;
+    margin-bottom: clamp(90px, 7.9375vw, 127px);
+  }
+  &__button {
+    max-width: 10.25rem;
+  }
+  &__advantages {
+
+  }
+}
+
+.adv-list {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px 6.3rem;
+  &__item {
+    grid-gap: 10px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+  &__icon {
+    flex: 0 0 auto;
+    width: 3.125rem;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--icon-shadow);
+    border-radius: 10px;
+  }
+  &__heading {
+    font-size: clamp(1rem, 1.25vw, 20px);
+  }
+  &__subheading {
+    font-size: 15px;
+    font-weight: 300;
+  }
+}
+
+@include max-width(77.5em) {
+  .hero {
+    &__body {
+      justify-content: center;
+      display: flex;
+
+    }
+    &__info {
+      max-width: 512px;
+    }
+    &__descr {
+      max-width: 450px;
+    }
+    &__image {
+      max-width: 31.25rem;
+    }
+  }
+}
+
+@include max-width($media) {
+  .hero {
+    &__body {
+      flex-direction: column-reverse;
+      grid-gap: 1rem;
+    }
+    &__heading {
+      align-items: center;
+      text-align: center;
+    }
+    &__button {
+      margin-inline: auto;
+    }
+    &__descr {
+      margin-inline: auto;
+    }
+    &__info {
+      padding-top: 0;
+      margin-inline: auto;
+    }
+    &__heading {
+      margin-bottom: 3rem;
+    }
+    &__image {
+      margin-inline: auto;
+      max-width: 21.875rem;
+    }
+  }
+}
+
+@include max-width(31.25em) {
+  .hero {
+
+  }
+  .adv-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__item {
+
+      max-width: 150px;
+    }
+    &__subheading {
+      font-size: 12px;
+    }
+    &__info {
+      max-width: 140px;
+    }
+  }
+}

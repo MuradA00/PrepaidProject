@@ -1,0 +1,15 @@
+.map {
+  background-color: var(--clr-main);
+  &__body {
+    padding: 3.3125rem 0;
+  }
+  &__title {
+    margin-bottom: clamp(2rem, 3.125vw, 50px);
+    text-align: center;
+    font-size: clamp(20px, 2.1875vw, 35px);
+    font-weight: 400;
+    span {
+      font-weight: 600;
+    }
+  }
+}
